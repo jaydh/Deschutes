@@ -1,11 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import {ReactDOM, render} from 'react-dom';
 import './index.css';
 import firebase from 'firebase'
 import {Router, Route, hashHistory} from 'react-router';
 import {createStore, applyMiddleware} from 'redux';
-
+import {Provider} from 'react-redux';
+import todoApp from './Reducers'
+import App from './Components/App'
 
 // Initialize Firebase
 var config = {
@@ -18,16 +19,11 @@ var config = {
 firebase.initializeApp(config);
 
 
-const task = [
-  'finish app',
-  'eventually',
-  'programming',
-  false
-]
+let store = createStore(todoApp);
 
-ReactDOM.render(
-  <App />,
-  <Tasks pair={task}/>,
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
-  
-);
+)
