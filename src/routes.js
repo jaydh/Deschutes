@@ -7,7 +7,6 @@ import IndexPage from './components/IndexPage';
 import LifeTipsPage from './components/LifeTipsPage'
 import EventsPage from './components/EventsPage'
 import AboutPage from './components/AboutPage'
-import StaffPage from './components/StaffPage'
 import ConnectUPage from './components/ConnectU'
 import NotFoundPage from './components/NotFoundPage';
 
@@ -17,7 +16,6 @@ const routes = (
     <Route path="lifetips" component={LifeTipsPage}/>
     <Route path="events" component={EventsPage}/>
     <Route path="about" component={AboutPage}/>
-    <Route path="staff/:id" component={StaffPage}/>
     <Route path="ConnectU" component={ConnectUPage}/>
     <Route path="*" component={NotFoundPage}/>
   </Route>

@@ -10,8 +10,8 @@ export default class IndexPage extends React.Component {
       <div className="home">
         <div className="pane-selector">
         </div>
-        <div className="staff-selector">
-          {staff.map(staffData => <StaffPreview key={staffData.id} {...staffData} />)}
+        <div className="navigation-menu">
+          {}
         </div>
       </div>
     );

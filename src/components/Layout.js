@@ -2,6 +2,26 @@
 
 import React from 'react';
 import { Link } from 'react-router';
+import NavigationMenu from './NavigationMenu.js'
+
+  const pages = [
+  {
+      id: 'life tips'
+  }, 
+  {
+      id: 'events'
+  }, 
+  {
+      id: 'community'
+  },
+  {
+      id: 'about us'
+  },
+  {
+      id: 'home'
+  }
+  ];
+
 
 export default class Layout extends React.Component {
   render() {
@@ -11,8 +31,11 @@ export default class Layout extends React.Component {
           <Link to="/">
             <img className="logo" src="/img/logo-grs.png"/>
           </Link>
+          <NavigationMenu pages={pages}/>
         </header>
+        
         <div className="app-content">{this.props.children}</div>
+        
         <footer>
           <p>
             <a href="https://www.facebook.com/internationalreachseattle/" target="_blank"><img src="/img/banners/banner_facebook.png" class="img-responsive banner_sns opacity" /></a>

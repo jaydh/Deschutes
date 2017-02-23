@@ -1,11 +1,14 @@
 'use strict';
 
 import React from 'react';
-i
+import staff from '../data/Staff.js'
+
 export default class AboutPage extends React.Component {
   render() {
         return(
-            0
+            <div className="staff-selector">
+                {staff.map(staffData => <staffPreview key={staffData.id} {...staffData} />)}
+            </div>
         );
     }
 }
