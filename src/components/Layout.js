@@ -4,25 +4,6 @@ import React from 'react';
 import { Link } from 'react-router';
 import NavigationMenu from './NavigationMenu.js'
 
-  const pages = [
-  {
-      id: 'life tips'
-  }, 
-  {
-      id: 'events'
-  }, 
-  {
-      id: 'community'
-  },
-  {
-      id: 'about us'
-  },
-  {
-      id: 'home'
-  }
-  ];
-
-
 export default class Layout extends React.Component {
   render() {
     return (
@@ -31,7 +12,7 @@ export default class Layout extends React.Component {
           <Link to="/">
             <img className="logo" src="/img/logo-grs.png"/>
           </Link>
-          <NavigationMenu pages={pages}/>
+          <NavigationMenu/>
         </header>
         
         <div className="app-content">{this.props.children}</div>
