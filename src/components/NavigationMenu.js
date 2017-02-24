@@ -7,7 +7,7 @@ export default class NavigationMenu extends React.Component {
   constructor(props) {
     super(props);
     this.state = {pages: [
-    {
+      {
         id: 'life tips',
         name: 'life-tips'
   }, 
