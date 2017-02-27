@@ -8,8 +8,8 @@ export default class NavigationMenu extends React.Component {
     super(props);
     this.state = {pages: [
       {
-        id: 'life tips',
-        name: 'life-tips'
+        id: 'life-tips',
+        name: 'life tips'
   }, 
   {
       id: 'events',
@@ -20,8 +20,8 @@ export default class NavigationMenu extends React.Component {
       name: 'community'
   },
   {
-      id: 'about us',
-      name: 'about-us'
+      id: 'about-us',
+      name: 'about us'
   },
   {
       id: 'home',
