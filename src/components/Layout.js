@@ -8,15 +8,11 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div className="app-container">
-        <header>
-          <Link to="/">
-            <img className="logo" src="/img/logo-grs.png"/>
-          </Link>
-          <NavigationMenu/>
-        </header>
-        
+    
+        <NavigationMenu />
+
         <div className="app-content">{this.props.children}</div>
-        
+
         <footer>
           <p>
             <a href="https://www.facebook.com/internationalreachseattle/" target="_blank"><img src="/img/banners/banner_facebook.png" class="img-responsive banner_sns opacity" /></a>
@@ -26,6 +22,6 @@ export default class Layout extends React.Component {
           </p>
         </footer>
       </div>
-    );
+    )
   }
 }

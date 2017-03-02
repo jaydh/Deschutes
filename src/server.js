@@ -38,10 +38,10 @@ app.get('*', (req, res) => {
       let markup;
       if (renderProps) {
         // if the current route matched we have renderProps
-        markup = renderToString(<RouterContext {...renderProps}/>);
+        markup = renderToString(<RouterContext {...renderProps} />);
       } else {
         // otherwise we can render a 404 page
-        markup = renderToString(<NotFoundPage/>);
+        markup = renderToString(<NotFoundPage />);
         res.status(404);
       }
 

@@ -1,13 +1,19 @@
 'use strict';
 
 import React from 'react';
-import staff from '../data/Staff.js'
+import StaffPreview from './StaffPreview'
+import staff from '../data/Staff'
 
 export default class AboutPage extends React.Component {
-  render() {
-        return(
-            <div className="staff-selector">
-                {staff.map(staffData => <staffPreview key={staffData.id} {...staffData} />)}
+    render() {
+        return (
+            <div className="about-full" class="col-sm-8 col-sm-offset-2 col-xs-12">
+                <h1>ABOUT US </h1>
+                <h2>Mission Statement</h2>
+                <p>sdafasdf</p>
+                <div className="staff-grid">
+                    {staff.map(staffData => <StaffPreview key={staffData.id} {...staffData} />)}
+                </div>
             </div>
         );
     }

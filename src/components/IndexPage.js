@@ -1,3 +1,4 @@
+
 'use strict';
 
 import React from 'react';
@@ -8,11 +9,8 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <div className="home">
-        <div className="pane-selector">
-        </div>
-        <div className="navigation-menu">
-          {}
-        </div>
+        <title>Global Reach Seattle -All the information for your life in Seattle-</title>
+        
       </div>
     );
   }

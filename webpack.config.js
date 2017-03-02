@@ -6,16 +6,8 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  devtool: debug ? 'inline-sourcemap' : null,
   entry: path.join(__dirname, 'src', 'app-client.js'),
-  devServer: {
-    inline: true,
-    port: 3333,
-    contentBase: "src/static/",
-    historyApiFallback: {
-      index: '/index-static.html'
-    }
-  },
+
   output: {
     path: path.join(__dirname, 'src', 'static', 'js'),
     publicPath: "/js/",
@@ -23,11 +15,11 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: path.join(__dirname, 'src'),
-      loader: ['babel-loader'],
-      query: {
-        cacheDirectory: 'babel_cache',
-        presets: debug ? ['react', 'es2015', 'react-hmre'] : ['react', 'es2015']
+      test: /\.js$/, exclude: /node_modules/,
+      loader: "babel-loader",
+      query:
+      {
+        presets: ['react']
       }
     }]
   },
@@ -36,7 +28,6 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     }),
     new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false },
       mangle: true,

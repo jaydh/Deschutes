@@ -1,0 +1,103 @@
+html {
+  color: #030303;
+  font: caption;
+  padding-bottom: 2em;
+}
+
+body {
+  background: linear-gradient(to left, #4b6cb7, #182848);
+}
+
+a {
+  color: #268428;
+  text-decoration: underline;
+}
+
+h1 {
+   color: #3c763d;
+   position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 16.66666667%;
+}
+
+header {
+  padding: 2em;
+}
+
+header .logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+footer {
+  margin: 4em auto;
+  padding: 2em;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+footer p {
+  line-height: 1.2em;
+  margin: 0 0 1em 0;
+}
+
+.not-found {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+.not-found h1 {
+  font-size: 10em;
+  font-weight: bold;
+}
+
+.not-found h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.navigateBack {
+  font-size: 1.6em;
+  padding: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+#abar {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+#abar a {
+  background: #ffa500;
+  color: #000;
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+#abar a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 80%;
+  color: #333;
+  background: #419be0;
+}
