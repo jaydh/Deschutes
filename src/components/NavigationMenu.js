@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import {stack as Menu} from 'react-burger-menu'
+import {bubble as Menu} from 'react-burger-menu'
 import { Link } from 'react-router';
 import Radium from 'radium'
 
