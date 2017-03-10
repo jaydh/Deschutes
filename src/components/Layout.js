@@ -3,16 +3,14 @@
 import React from 'react';
 import { Link } from 'react-router';
 import NavigationMenu from './NavigationMenu.js'
-import { scaleRotate as Menu } from 'react-burger-menu'
-5
+
 export default class Layout extends React.Component {
   render() {
     return (
       <div className="app-container">
         <div id="outer-container">
-       
-          <NavigationMenu />
-
+        <NavigationMenu />
+        
           <main id="page-wrap">
             <div className="app-content">{this.props.children}</div>
 

@@ -9,7 +9,8 @@ export default class EvengsPage extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {events: 
+        this.state = {
+            events:
             [
                 {
                     id: '1',
@@ -31,31 +32,33 @@ export default class EvengsPage extends React.Component {
         }
     }
 
-   render () {
-    var settings = {
-        dots: true
-    };
+    render() {
+        var settings = {
+            dots: true
+        };
 
-    return (
-      <div class="container">
-        <h1>EVENTS</h1>
-		<p class="text-center">What kind of topics are you interested in?</p>
-      
-      <Slider {...settings}>
+        return (
+            <div class="EvengsPage">
+                <div class="container">
+                    <h1>EVENTS</h1>
 
-        {this.state.events.map(eventItem => {
-             return (
-                 <div>
-                    <a href={eventItem.link} >
-                     <img className="eventImage" src={eventItem.src}/>
-                    </a>
-                    {eventItem.name} 
-                    {eventItem.description}
+                    <Slider {...settings}>
+                        <div><img src='http://placekitten.com/g/400/200' /></div>
+                        <div><img src='http://placekitten.com/g/400/200' /></div>
+                        {this.state.events.map(eventItem => {
+                            return (
+                                <div>
+                                    <a href={eventItem.link} >
+                                        <img className="eventImage" src={eventItem.src} />
+                                    </a>
+                                    {eventItem.name}
+                                    {eventItem.description}
+                                </div>
+                            )
+                        })}
+                    </Slider>
                 </div>
-             )
-        })}
-      </Slider>
-      </div>
-    );
-  }
+            </div>
+        );
+    }
 }

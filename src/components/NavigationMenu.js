@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import {slide as Menu} from 'react-burger-menu'
+import {stack as Menu} from 'react-burger-menu'
 import { Link } from 'react-router';
 import Radium from 'radium'
 
@@ -14,19 +14,19 @@ export default class NavigationMenu extends React.Component {
       pages: [
         {
           id: 'lifetips',
-          name: 'life tips'
+          name: 'Life Tips'
         },
         {
           id: 'events',
-          name: 'events'
+          name: 'Events'
         },
         {
           id: 'community',
-          name: 'community'
+          name: 'Community'
         },
         {
           id: 'about',
-          name: 'about us'
+          name: 'About Us'
         }, 
         {
           id: 'connectu',
@@ -38,10 +38,11 @@ export default class NavigationMenu extends React.Component {
   render() {
     return (
       <Menu className="navigation-menu" 
-      pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }
+      pageWrapId={ "page-wrap" } 
+      outerContainerId={ "outer-container" }
       isOpen={ true }
       radiumConfig={{ userAgent: 'all' }}
-      width={ 150 } >
+      width={ 200 } >
         {this.state.pages.map(menuItem => {
           return <RadiumLink className="menu-item" to={`/${menuItem.id}`} activeClassName="active">
             {menuItem.name}
