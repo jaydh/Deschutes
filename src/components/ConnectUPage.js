@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export default class ConnectU extends React.Component {
+export default class ConnectUPage extends React.Component {
   render() {
         return(
             0

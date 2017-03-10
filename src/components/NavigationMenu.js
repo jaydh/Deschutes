@@ -27,6 +27,10 @@ export default class NavigationMenu extends React.Component {
         {
           id: 'about',
           name: 'about us'
+        }, 
+        {
+          id: 'connectu',
+          name: 'ConnectU'
         }
       ]
     };
@@ -43,8 +47,7 @@ export default class NavigationMenu extends React.Component {
             {menuItem.name}
           </RadiumLink>;
         })}
-        <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
-      </Menu>
+       </Menu>
       
     );
   }

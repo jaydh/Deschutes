@@ -25,6 +25,7 @@ a {
 
 h1 {
    color: #3c763d;
+   padding-top: 8em;
 }
 
 footer {
@@ -63,29 +64,6 @@ footer p {
   padding: 2em;
   text-align: center;
   text-decoration: none;
-}
-
-#abar {
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-}
-
-#abar a {
-  background: #ffa500;
-  color: #000;
-  display: block;
-  font-weight: bold;
-  margin: 0;
-  padding: 1em;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-}
-
-#abar a:hover {
-  text-decoration: underline;
 }
 
 .container {
@@ -132,7 +110,7 @@ staff-image {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background:  #268428;
 }
 
 /* Position and sizing of clickable cross button */

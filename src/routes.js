@@ -7,7 +7,7 @@ import IndexPage from './components/IndexPage'
 import LifeTipsPage from './components/LifeTipsPage'
 import EventsPage from './components/EventsPage'
 import AboutPage from './components/AboutPage'
-import ConnectUPage from './components/ConnectU'
+import ConnectUPage from './components/ConnectUPage'
 import NotFoundPage from './components/NotFoundPage';
 
 const routes = (
@@ -16,7 +16,7 @@ const routes = (
     <Route path="lifetips" component={LifeTipsPage}/>
     <Route path="events" component={EventsPage}/>
     <Route path="about" component={AboutPage}/>
-    <Route path="ConnectU" component={ConnectUPage}/>
+    <Route path="connectu" component={ConnectUPage}/>
     <Route path="*" component={NotFoundPage}/>
   </Route>
 );
