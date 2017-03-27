@@ -5,7 +5,7 @@ import React from 'react';
 export default class LifeTipsPage extends React.Component {
   render() {
         return(
-            <div>suh</div>
+            <div>suh dudddde</div>
         );
     }
 }
