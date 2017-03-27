@@ -14,7 +14,7 @@
   "author": "Luciano Mammino",
   "license": "MIT",
   "dependencies": {
-    "babel": "next",
+    "babel": "^6.23.0",
     "babel-cli": "^6.23.0",
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.5",
@@ -26,7 +26,7 @@
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-0": "^6.22.0",
     "babel-runtime": "^6.23.0",
-    "caniuse-db": "^1.0.30000640",
+    "caniuse-db": "^1.0.30000641",
     "ejs": "^2.5.1",
     "eslint": "^3.16.1",
     "express": "^4.14.0",

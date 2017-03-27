@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to left, #4b6cb7, #182848);
+
 }
 
 .app-content * {
@@ -31,12 +31,29 @@ a {
 h1 {
    color: #3c763d;
    font-size: 250%;
+   border: double;
 }
 
 h2{
   color: #3c763d;
   font-size: 200%;
+  border: solid;
 }
+
+.container {
+  color: #333;
+  display: flex;
+}
+
+.staff-grid {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  
+  .staff-image {
+    height : 200px;
+    width: 100%;
+  }
 
 footer {
   margin: 4em auto;
@@ -76,9 +93,7 @@ footer p {
   text-decoration: none;
 }
 
-.container {
-  color: #333;
-}
+
 
 /* Position and sizing of burger button */
 .bm-burger-button {
