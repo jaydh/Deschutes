@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router';
-import NavigationMenu from './NavigationMenu.js'
+import NavigationMenu from './presentation/NavigationMenu.js'
 
 export default class Layout extends React.Component {
   render() {

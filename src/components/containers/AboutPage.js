@@ -1,8 +1,8 @@
 'use strict';
 
 import React from 'react';
-import StaffPreview from './StaffPreview'
-import staff from '../data/Staff'
+import StaffPreview from '../presentation/StaffPreview'
+import staff from '/Deschutes/src/data/Staff'
 
 export default class AboutPage extends React.Component {
     render() {

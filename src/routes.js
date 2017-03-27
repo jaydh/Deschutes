@@ -3,12 +3,12 @@
 import React from 'react'
 import { Route, IndexRoute } from 'react-router'
 import Layout from './components/Layout';
-import IndexPage from './components/IndexPage'
-import LifeTipsPage from './components/LifeTipsPage'
-import EventsPage from './components/EventsPage'
-import AboutPage from './components/AboutPage'
-import ConnectUPage from './components/ConnectUPage'
-import NotFoundPage from './components/NotFoundPage';
+import IndexPage from './components/containers/IndexPage'
+import LifeTipsPage from './components/containers/LifeTipsPage'
+import EventsPage from './components/containers/EventsPage'
+import AboutPage from './components/containers/AboutPage'
+import ConnectUPage from './components/containers/ConnectUPage'
+import NotFoundPage from './components/containers/NotFoundPage';
 
 const routes = (
   <Route path="/" component={Layout}>
