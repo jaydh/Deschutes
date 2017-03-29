@@ -15,6 +15,7 @@ export default class Header extends React.Component {
     };
     return (
       <div className='Header'>
+        
         <Slider {...settings}>
           <div><img src='/img/headers/1.jpg' /></div>
           <div><img src='/img/headers/2.jpg' /></div>

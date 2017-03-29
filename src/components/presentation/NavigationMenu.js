@@ -13,6 +13,10 @@ export default class NavigationMenu extends React.Component {
     this.state = {
       pages: [
         {
+          id: '',
+          name: 'Home'
+        },
+        {
           id: 'lifetips',
           name: 'Life Tips'
         },
