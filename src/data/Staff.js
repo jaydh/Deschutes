@@ -18,6 +18,21 @@ const staff = [
     'name': 'Katherine',
     'image': 'katherine-eng.png',
     'introduction': 'Katherine is a student at the University of Washington studying Business, majoring in Operations and Supply Chain Management. She loves pets and enjoys spending time with family'
+  }, {
+    'id': 'hanji-ando',
+    'name': 'Hanji',
+    'image': 'hanji-ando.png',
+    'introduction': 'He is an international student from Japan studying Business at Bellevue College. He had played baseball for twelve years in Japan. He likes spending time with friends and his two dogs. He usually drinks three cup of coffee everyday.The reason he joined this project because he is one of the international students, and it would have been helpful for him if there is a website like GRS. He hopes this project, GRS, would be a big support for the new international student.'
+  }, {
+    'id': 'yaohan-di',
+    'name': 'YaoHan',
+    'image': 'yaohan-di.png',
+    'introduction': 'Hi, I am Daisy (Yaohan Di), an exchange student from the University of Tokyo. I am a Chinese and went to Japan after I graduated from high school. I major in International relations and I am a junior now. I also went to Okinawa (a beautiful island of Japan) during my high school as an exchange student. Studying abroad can be both exciting and frustrating. Getting used to a new culture and environment and making new friends there are always difficult for international students with the language barrier and cultural differences. Here in Seattle, I fell so lucky to meet the lovely and awesome guys who share the same feeling with me and are also willing to help other international student to get connected in Seattle. I would like to share my experience and help more international students like me, to be their first step to the wonderful life of Seattle. So I joined GRS, hoping we can bring more courage, confidence and opportunities to international students.'
+  } , {
+    'id': 'Yuki Torikai',
+    'name': 'Yuki',
+    'image': 'yuki-torikai.png',
+    'introduction': 'Yuki is an exchange student from Keio University in Tokyo, Japan. She has studied business in her home university and UW. She has also studied Econometrics and has insight into data analysis and economics. She is highly interested in experiential learning. She is always excited working with group of people and learn from them. She has background experience in working for fair-trade business organization, consulting projects and startup company. Some of her skills she&#39;s gained through these experiences are facilitating, critical and logical thinking, forward looking decision making. At free time, she loves cooking, specializing in Japanese food. Now she enjoys learning to cook other cultures&#39; foods, like Korean, Chinese, Thai, Vietnamese and Mexican foods. When you need a shelf at parties, she is always welcome to cook her favorite dishes.'
   }
 ];
 

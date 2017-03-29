@@ -10,13 +10,14 @@ export default class Layout extends React.Component {
       <div className="app-container">
         <div id="outer-container">
 
-        <header>
-          
-        </header>
+          <header>
+
+          </header>
 
           <NavigationMenu />
 
           <main id="page-wrap">
+
             <div className="app-content">{this.props.children}</div>
 
             <footer>

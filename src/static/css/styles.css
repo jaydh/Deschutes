@@ -31,29 +31,31 @@ a {
 h1 {
    color: #3c763d;
    font-size: 250%;
-   border: double;
+   border: 10px double;
+   display: inline;
+   
 }
 
 h2{
   color: #3c763d;
   font-size: 200%;
   border: solid;
+  display: inline;
 }
 
-.container {
+.flex-container {
+  display: flex;
+  flex-flow: column nowrap;
+  
+}
+.staff-grid {
   color: #333;
   display: flex;
+  justify-content: center;
 }
 
-.staff-grid {
-    flex-flow: row wrap;
-    justify-content: space-around;
-  }
-  
-  .staff-image {
-    height : 200px;
-    width: 100%;
-  }
+.staff-image {
+}
 
 footer {
   margin: 4em auto;
