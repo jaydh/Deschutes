@@ -3,8 +3,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-
-
 export default class EvengsPage extends React.Component {
 
     constructor(props) {
@@ -38,26 +36,24 @@ export default class EvengsPage extends React.Component {
         };
 
         return (
-            <div class="EvengsPage">
-                <div class="container">
-                    <h1>EVENTS</h1>
+            <div>
+                <h1>EVENTS</h1>
 
-                    <Slider {...settings}>
-                        <div><img src='http://placekitten.com/g/400/200' /></div>
-                        <div><img src='http://placekitten.com/g/400/200' /></div>
-                        {this.state.events.map(eventItem => {
-                            return (
-                                <div>
-                                    <a href={eventItem.link} >
-                                        <img className="eventImage" src={eventItem.src} />
-                                    </a>
-                                    {eventItem.name}
-                                    {eventItem.description}
-                                </div>
-                            )
-                        })}
-                    </Slider>
-                </div>
+                <Slider {...settings}>
+                    <div><img src='http://placekitten.com/g/400/200' /></div>
+                    <div><img src='http://placekitten.com/g/400/200' /></div>
+                    {this.state.events.map(eventItem => {
+                        return (
+                            <div>
+                                <a href={eventItem.link} >
+                                    <img className="eventImage" src={eventItem.src} />
+                                </a>
+                                {eventItem.name}
+                                {eventItem.description}
+                            </div>
+                        )
+                    })}
+                </Slider>
             </div>
         );
     }

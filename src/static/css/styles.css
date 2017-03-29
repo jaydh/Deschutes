@@ -17,12 +17,6 @@ body {
 
 }
 
-.app-content * {
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-bottom: 2em;
-  box-sizing: border-box;
-}
 a {
   color: #268428;
   text-decoration: underline;
@@ -30,10 +24,7 @@ a {
 
 h1 {
    color: #3c763d;
-   font-size: 250%;
-   border: 10px double;
-   display: inline;
-   
+   font-size: 500%;
 }
 
 h2{
@@ -46,15 +37,16 @@ h2{
 .flex-container {
   display: flex;
   flex-flow: column nowrap;
-  
+  justify-content: space-around;
+  align-content: center;
 }
 .staff-grid {
-  color: #333;
   display: flex;
-  justify-content: center;
-}
-
-.staff-image {
+  flex-flow: row nowrap;
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  align-content: space-around;
 }
 
 footer {
@@ -68,6 +60,10 @@ footer {
 footer p {
   line-height: 1.2em;
   margin: 0 0 1em 0;
+}
+
+.Header{
+  border-bottom: 4px solid #3c763d;
 }
 
 .not-found {
