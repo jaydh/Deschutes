@@ -5,11 +5,11 @@
   "main": "src/server.js",
   "repository": "git@github.com:lmammino/judo-heroes.git",
   "scripts": {
-    "start": "NODE_ENV=production node_modules/.bin/babel-node src/server.js",
+    "start": "cross-env NODE_ENV=production node_modules/.bin/babel-node src/server.js",
     "start-dev": "npm run start-dev-hmr",
     "start-dev-single-page": "node_modules/.bin/http-server src/static",
     "start-dev-hmr": "node_modules/.bin/webpack-dev-server --progress --inline --hot",
-    "build": "NODE_ENV=production node_modules/.bin/webpack -p"
+    "build": "cross-env NODE_ENV=production node_modules/.bin/webpack -p"
   },
   "author": "Luciano Mammino",
   "license": "MIT",
@@ -27,6 +27,7 @@
     "babel-preset-stage-0": "^6.22.0",
     "babel-runtime": "^6.23.0",
     "caniuse-db": "^1.0.30000641",
+    "cross-env": "^3.2.4",
     "ejs": "^2.5.1",
     "eslint": "^3.16.1",
     "express": "^4.14.0",
