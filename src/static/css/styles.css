@@ -25,6 +25,7 @@ a {
 h1 {
    color: #3c763d;
    font-size: 500%;
+   margin: auto;
 }
 
 h2{
@@ -32,21 +33,20 @@ h2{
   font-size: 200%;
   border: solid;
   display: inline;
+  margin: auto;
 }
-
+ 
 .flex-container {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-content: center;
+  flex-flow: column wrap;
 }
 .staff-grid {
   display: flex;
-  flex-flow: row nowrap;
-  width: 500px;
+  flex-flow: row wrap;
+  width: 200px;
   height: 200px;
   margin: auto;
-  align-content: space-around;
+  justify-content: space-around;
 }
 
 footer {
