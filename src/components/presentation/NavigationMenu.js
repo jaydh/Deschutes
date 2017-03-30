@@ -44,7 +44,6 @@ export default class NavigationMenu extends React.Component {
       <Menu className="navigation-menu" 
       pageWrapId={ "page-wrap" } 
       outerContainerId={ "outer-container" }
-      isOpen={ true }
       radiumConfig={{ userAgent: 'all' }}
       width={ 200 } >
         {this.state.pages.map(menuItem => {
