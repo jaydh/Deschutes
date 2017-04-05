@@ -3,13 +3,14 @@
 import React from 'react';
 import StaffPreview from '../presentation/StaffPreview'
 import staff from '../../data/Staff'
-import NotFoundPage from './containers/NotFoundPage'
+import NotFoundPage from './NotFoundPage'
+import {Link} from 'react-router'
 
 export default class StaffPage extends React.Component {
     render() {
         const id = this.props.params.id;
         const staffMember = staff.filter((staff) => staff.id === id)[0];
-        if (!staff) {
+        if (!staffMember) {
             return <NotFoundPage />;
         }
         return (
