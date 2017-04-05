@@ -54,13 +54,6 @@ p {
   margin: auto;
 }
 
-#bannerimage {
-  width: 100px;
-  height: 50px;
-  background-color: #3c763d;
-  background-position: center;
-}
-
 .Header{
   border-bottom: 4px solid #3c763d;
   margin: 0  auto;
