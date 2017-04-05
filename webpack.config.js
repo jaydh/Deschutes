@@ -9,7 +9,7 @@ module.exports = {
   entry: {
     'app': [
       'react-hot-loader/patch',
-    path.join(__dirname, 'src', 'app-client.js')]
+      path.join(__dirname, 'src', 'app-client.js')]
   },
 
   output: {
@@ -19,14 +19,10 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /\.js$/, 
+      test: /\.js$/,
       exclude: /node_modules/,
-      loaders: 'babel-loader',
-      query:
-      {
-        presets: ['react','es2015']
-      }
-    }]    
+      loader: 'babel-loader'
+    }]
   },
   plugins: debug ? [] : [
     new webpack.DefinePlugin({

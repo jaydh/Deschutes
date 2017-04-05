@@ -9,11 +9,21 @@ import { match, RouterContext } from 'react-router';
 import routes from './routes';
 import NotFoundPage from './components/containers/NotFoundPage';
 
+var webpack = require('webpack');
+var WebpackDevServer = require('webpack-dev-server');
+var config = require('../webpack.config.js');
+
 // initialize the server and configure support for ejs templates
 const app = new Express();
+const compiler = webpack(config);
+
 const server = new Server(app);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+
+app.use(require('webpack-dev-middleware')(compiler, {
+  publicPath: config.output.publicPath
+}));
 
 // define the folder that will be used for static assets
 app.use(Express.static(path.join(__dirname, 'static')));
@@ -51,12 +61,10 @@ app.get('*', (req, res) => {
   );
 });
 
-// start the server
-const port = process.env.PORT || 3000;
-const env = process.env.NODE_ENV || 'production';
-server.listen(port, err => {
+app.listen(3000, function(err) {
   if (err) {
     return console.error(err);
   }
-  console.info(`Server running on http://localhost:${port} [${env}]`);
+
+  console.log('Listening at http://localhost:3000/');
 });

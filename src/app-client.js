@@ -1,9 +1,10 @@
 'use strict';
-
+import 'react-hot-loader/patch';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AppRoutes from './components/AppRoutes';
 import { AppContainer } from 'react-hot-loader'
+
 
 window.onload = () => {
   ReactDOM.render(
@@ -22,7 +23,7 @@ if (module.hot) {
       <AppContainer>
         <NextApp/>
       </AppContainer>,
-      document.getElementById('root')
+      document.getElementById('main')
     );
   });
 }
