@@ -72,8 +72,12 @@ p {
 .Footer{
   border-top: 4px solid #3c763d;
   margin: 0 auto;
-  padding: 40px;
-  margin: auto;
+  padding: 10px 0px;
+}
+
+.FooterLinks{
+  width: 500px;
+  margin: 0 auto;
 }
 
 .not-found {
