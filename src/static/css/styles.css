@@ -51,8 +51,8 @@ h2{
 .staff-preview-container {
   display: flex;
   flex-flow: row wrap;
-  width: 400px;
-  height: 400px;
+  width: 900px;
+  height: 300px;
   margin: auto;
   justify-content: space-around;
   align-content: space-between;

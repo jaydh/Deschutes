@@ -15,11 +15,11 @@ export default class StaffPage extends React.Component {
         }
         return (
             <div>
-                <img className="staff-image" src={`img/staff/${this.props.image}`} />
-                <h3>{this.props.name}</h3>
-                <section className='staff-introduction'>{this.props.introduction}</section>
+                <img className="staff-image" src={`img/staff/${staffMember.image}`} />
+                <h1>{staffMember.name}</h1>
+                <section className='staff-introduction'>{staffMember.introduction}</section>
                 <div className="navigateBack">
-                    <Link to="/about/">« Back to the About</Link>
+                    <Link to="/about/">« Back to About</Link>
                 </div>
             </div>
         )
