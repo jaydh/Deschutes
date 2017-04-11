@@ -36,6 +36,11 @@ const staff = [
     'name': 'Yuki',
     'image': 'yuki-torikai.png',
     'introduction': 'Yuki is an exchange student from Keio University in Tokyo, Japan. She has studied business in her home university and UW. She has also studied Econometrics and has insight into data analysis and economics. She is highly interested in experiential learning. She is always excited working with group of people and learn from them. She has background experience in working for fair-trade business organization, consulting projects and startup company. Some of her skills she&#39;s gained through these experiences are facilitating, critical and logical thinking, forward looking decision making. At free time, she loves cooking, specializing in Japanese food. Now she enjoys learning to cook other cultures&#39; foods, like Korean, Chinese, Thai, Vietnamese and Mexican foods. When you need a shelf at parties, she is always welcome to cook her favorite dishes.'
+  } , {
+    'id': 'Erisa Steckler',
+    'name': 'Erisa',
+    'image': 'erisa-steckler.png',
+    'introduction': 'hi'
   }
 ];
 
