@@ -7,7 +7,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
 import routes from './routes';
-import NotFoundPage from './components/containers/NotFoundPage';
+import NotFoundPage from './components/presentation/NotFoundPage';
 
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');

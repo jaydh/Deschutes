@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import StaffPreview from '../presentation/StaffPreview'
+import StaffPreview from './StaffPreview'
 import staff from '../../data/Staff'
 import NotFoundPage from './NotFoundPage'
 import {Link} from 'react-router'
