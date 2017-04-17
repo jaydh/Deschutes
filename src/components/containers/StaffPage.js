@@ -19,7 +19,7 @@ export default class StaffPage extends React.Component {
                 <h3>{staffMember.name}</h3>
                 <section className='staff-introduction'>{staffMember.introduction}</section>
                 <div className="navigateBack">
-                    <Link to="/about/">« Back to the About</Link>
+                    <Link to="/about/">« Back to About Us</Link>
                 </div>
             </div>
         )

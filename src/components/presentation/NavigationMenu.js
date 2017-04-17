@@ -17,6 +17,10 @@ export default class NavigationMenu extends React.Component {
           name: 'Home'
         },
         {
+          id: 'blogs',
+          name: 'Blogs'
+        },
+        {
           id: 'lifetips',
           name: 'Life Tips'
         },

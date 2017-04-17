@@ -10,6 +10,7 @@ import AboutPage from './components/containers/AboutPage'
 import ConnectUPage from './components/containers/ConnectUPage'
 import NotFoundPage from './components/containers/NotFoundPage'
 import StaffPage from './components/containers/StaffPage'
+import BlogsPage from './components/containers/BlogsPage'
 
 const routes = (
   <Route path="/" component={Layout}>
@@ -19,6 +20,7 @@ const routes = (
     <Route path="about" component={AboutPage}/>
     <Route path="connectu" component={ConnectUPage}/>
     <Route path="about/:id" component={StaffPage}/>
+    <Route path="blogs/:author/:id" component={BlogsPage}/>
     <Route path="*" component={NotFoundPage}/>
   </Route>
 );
