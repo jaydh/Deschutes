@@ -13,23 +13,24 @@ export default class Header extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 60
+      autoplaySpeed: 10
     };
     return (
       <div className='Header'>
 
-        <div id="bannerimage">
+        <div id="logo">
           <Link className to={`/`} activeClassName="active">
             <img src='/img/logo-grs.png' />
           </Link>
         </div>
-
-        <Slider {...settings}>
-          <div><img src='/img/headers/1.jpg' /></div>
-          <div><img src='/img/headers/2.jpg' /></div>
-          <div><img src='/img/headers/3.jpg' /></div>
-          <div><img src='/img/headers/4.jpg' /></div>
-        </Slider>
+        <div id='headerCarousel'>
+          <Slider {...settings}>
+            <div><img src='/img/headers/1.jpg'  /></div>
+            <div><img src='/img/headers/2.jpg'  /></div>
+            <div><img src='/img/headers/3.jpg'  /></div>
+            <div><img src='/img/headers/4.jpg'  /></div>
+          </Slider>
+        </div>
       </div>
     );
   }

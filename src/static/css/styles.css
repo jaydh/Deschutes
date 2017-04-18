@@ -14,7 +14,6 @@ html {
 }
 
 body {
-
 }
 
 a {
@@ -36,12 +35,6 @@ h2{
 }
 
 
-#bannerimage {
-  width: 100px;
-  height: 50px;
-  background-color: #3c763d;
-  background-position: center;
-}
 
  
 .flex-container {
@@ -51,7 +44,7 @@ h2{
 .staff-preview-container {
   display: flex;
   flex-flow: row wrap;
-  width: 400px;
+  width: 800px;
   height: 400px;
   margin: auto;
   justify-content: space-around;
@@ -64,9 +57,24 @@ p {
 }
 
 .Header{
+  display: flex;
+  height: 500px;
   border-bottom: 4px solid #3c763d;
-  margin: 0  auto;
   padding: 40px;
+}
+
+#logo {
+  width: 100px;
+  height: 50px;
+  background-color: #3c763d;
+  background-position: center;
+  padding: 20px;
+}
+
+#headerCarousel{
+  width: 800px;
+  height: 300px;
+  padding: 20px;
 }
 
 .Footer{
