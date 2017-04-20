@@ -7,7 +7,7 @@ import { Link } from 'react-router';
 
 export default class Header extends React.Component {
   render() {
-    var settings = {
+    const settings = {
       infinite: true,
       speed: 250,
       slidesToShow: 1,
@@ -15,6 +15,11 @@ export default class Header extends React.Component {
       autoplay: true,
       autoplaySpeed: 10
     };
+
+    const images = ['/img/headers/1.jpg', '/img/headers/2.jpg', '/img/headers/3.jpg', '/img/headers/4.jpg']
+    const taggedImages = images.map(image => {
+      return <img src={image} height="30"/>;
+    })
     return (
       <div className='Header'>
 
@@ -25,10 +30,7 @@ export default class Header extends React.Component {
         </div>
         <div id='headerCarousel'>
           <Slider {...settings}>
-            <div><img src='/img/headers/1.jpg'  /></div>
-            <div><img src='/img/headers/2.jpg'  /></div>
-            <div><img src='/img/headers/3.jpg'  /></div>
-            <div><img src='/img/headers/4.jpg'  /></div>
+            {taggedImages}
           </Slider>
         </div>
       </div>
