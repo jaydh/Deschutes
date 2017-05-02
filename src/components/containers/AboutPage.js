@@ -17,18 +17,23 @@ export default class AboutPage extends React.Component {
             autoplay: true,
             autoplaySpeed: 10
         }
-        
+
         const officerPreview = staff.filter((staffMember) => {
             return staffMember.officer;
         }).map(staffData => {
-           return <StaffPreview key={staffData.id} {...staffData} />
+            return <StaffPreview key={staffData.id} {...staffData} />
         })
 
         const nonofficersPreview = staff.filter((staffMember) => {
             return !staffMember.officer
         }).map(staffData => {
-           return <StaffPreview key={staffData.id} {...staffData} />
+            return (
+                <div>
+                    <StaffPreview key={staffData.id} {...staffData} />
+                </div>
+            )
         })
+        console.log(nonofficersPreview)
 
         return (
             <div className="flex-container">
@@ -41,11 +46,13 @@ export default class AboutPage extends React.Component {
                 <div id="officer-container">
                     {officerPreview}
                 </div>
-                
+
                 <h3>Members</h3>
-                <Slider {...settings}>
-                    {nonofficersPreview}
-                </Slider>
+                <div className="staff-preview-container">
+                    <Slider {...settings}>
+                        {nonofficersPreview}
+                    </Slider>
+                </div>
 
             </div>
         );
