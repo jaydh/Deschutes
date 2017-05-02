@@ -13,9 +13,10 @@ export default class StaffPage extends React.Component {
         if (!staffMember) {
             return <NotFoundPage />;
         }
+        const imgSrc = '/img/staff/'+ staffMember.image;
         return (
             <div>
-                <img className="staff-image" src={`img/staff/${staffMember.image}`} />
+                <img className="staff-image" src={imgSrc} />
                 <h3>{staffMember.name}</h3>
                 <section className='staff-introduction'>{staffMember.introduction}</section>
                 <div className="navigateBack">
