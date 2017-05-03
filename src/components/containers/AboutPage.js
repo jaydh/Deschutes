@@ -11,11 +11,11 @@ export default class AboutPage extends React.Component {
 
         const settings = {
             infinite: true,
-            speed: 250,
-            slidesToShow: 1,
+            dots: true,
+            draggable: true,
+            slidesToShow: 3,
             slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 10
+            autoplay: true
         }
 
         const officerPreview = staff.filter((staffMember) => {
@@ -48,7 +48,7 @@ export default class AboutPage extends React.Component {
                 </div>
 
                 <h3>Members</h3>
-                <div className="staff-preview-container">
+                <div id="staff-preview-container">
                     <Slider {...settings}>
                         {nonofficersPreview}
                     </Slider>

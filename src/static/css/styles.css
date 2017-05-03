@@ -13,7 +13,11 @@ html {
   font: caption;
 }
 
+#page-wrap{
+  display: flex;
+}
 body {
+
 }
 
 a {
@@ -34,21 +38,24 @@ h2{
   margin: auto;
 }
 
-
-
- 
 .flex-container {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
 }
-.staff-preview-container {
+
+#officer-container {
   display: flex;
   flex-flow: row wrap;
+  margin: auto;
+  justify-content: center;
+  align-content: space-between;
+}
+#staff-preview-container {
+  display: flex;
   width: 800px;
   height: 400px;
   margin: auto;
-  justify-content: space-around;
-  align-content: space-between;
+
 }
 
 p {
@@ -58,9 +65,7 @@ p {
 
 .Header{
   display: flex;
-  height: 500px;
   border-bottom: 4px solid #3c763d;
-  padding: 40px;
 }
 
 #logo {
@@ -68,13 +73,12 @@ p {
   height: 50px;
   background-color: #3c763d;
   background-position: center;
-  padding: 20px;
 }
 
 #headerCarousel{
-  width: 800px;
-  height: 300px;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 40px;
+  width: 90%
 }
 
 .Footer{
