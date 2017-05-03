@@ -64,8 +64,8 @@ p {
 }
 
 .Header{
-  display: flex;
   border-bottom: 4px solid #3c763d;
+  height: 700px;
 }
 
 #logo {
@@ -78,7 +78,7 @@ p {
 #headerCarousel{
   margin: 0 auto;
   padding: 40px;
-  width: 90%
+  width: 90%;
 }
 
 .Footer{
