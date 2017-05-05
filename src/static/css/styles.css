@@ -8,6 +8,12 @@ input::-ms-clear{display:none}input[type=number]{-moz-appearance:textfield}
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{appearance:none}
 svg{display:inline-flex}img{max-width:100%;display:block}
 
+
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
 html {
   color: #030303;
   font: caption;
@@ -15,6 +21,7 @@ html {
 
 #page-wrap{
   display: flex;
+  background-color: #85e273;
 }
 body {
 
@@ -50,6 +57,7 @@ h2{
   justify-content: center;
   align-content: space-between;
 }
+
 #staff-preview-container {
   display: flex;
   width: 800px;
@@ -75,10 +83,11 @@ p {
   background-position: center;
 }
 
-#headerCarousel{
+.headerCarousel{
   margin: 0 auto;
   padding: 40px;
   width: 90%;
+  height: 400px;
 }
 
 .Footer{

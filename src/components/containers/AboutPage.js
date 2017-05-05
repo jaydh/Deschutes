@@ -15,7 +15,8 @@ export default class AboutPage extends React.Component {
             draggable: true,
             slidesToShow: 3,
             slidesToScroll: 1,
-            autoplay: true
+            autoplay: true,
+            arrows: true
         }
 
         const officerPreview = staff.filter((staffMember) => {

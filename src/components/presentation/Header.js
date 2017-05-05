@@ -8,15 +8,17 @@ import { Link } from 'react-router';
 export default class Header extends React.Component {
   render() {
     const settings = {
+      className: "headerCarousel",
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true
+      autoplay: true,
+      pauseOnHover: true
     };
 
     const images = ['/img/headers/1.jpg', '/img/headers/2.jpg', '/img/headers/3.jpg', '/img/headers/4.jpg', '/img/headers/5.jpg', '/img/headers/7.jpg', '/img/headers/8.jpg']
     const taggedImages = images.map(image => {
-      return <img src={image} height="500"/>;
+      return <img src={image} />;
     })
     return (
       <div className='Header'>
@@ -26,12 +28,10 @@ export default class Header extends React.Component {
             <img src='/img/logo-grs.png' />
           </Link>
         </div>
-        <div id='headerCarousel'>
-          <Slider {...settings}>
-            {taggedImages}
-          </Slider>
-        </div>
-      </div>
+        <Slider {...settings}>
+          {taggedImages}
+        </Slider>
+      </div >
     );
   }
 }
