@@ -59,7 +59,6 @@ h2{
 }
 
 #staff-preview-container {
-  display: flex;
   width: 800px;
   height: 400px;
   margin: auto;
@@ -70,10 +69,15 @@ p {
   width: 500px;
   margin: auto;
 }
-
+.events-carousel{
+  margin: auto;
+}
 .Header{
+  display:flex;
   border-bottom: 4px solid #3c763d;
-  height: 700px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 10px 0px;
 }
 
 #logo {
@@ -83,11 +87,11 @@ p {
   background-position: center;
 }
 
-.headerCarousel{
+.header-carousel{
   margin: 0 auto;
-  padding: 40px;
-  width: 90%;
+  padding: 30px;
   height: 400px;
+  width: 800px;
 }
 
 .Footer{

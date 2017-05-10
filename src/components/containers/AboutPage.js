@@ -34,8 +34,7 @@ export default class AboutPage extends React.Component {
                 </div>
             )
         })
-        console.log(nonofficersPreview)
-
+        
         return (
             <div className="flex-container">
                 <h1>ABOUT US </h1>
