@@ -33,12 +33,12 @@ export default class EvengsPage extends React.Component {
         const eventPreview = events.map(event => {
             return (
                 <div>
-                    <a href={eventItem.link} >
-                        <img className="eventImage" src={eventItem.src} />
+                    <a href={event.link} >
+                        <img className="eventImage" src={event.src} />
                     </a>
-                    <h2>{eventItem.name}</h2>
-                    <h3>{eventItem.date}</h3>
-                    <p>{eventItem.description}</p>
+                    <h2>{event.name}</h2>
+                    <h3>{event.date}</h3>
+                    <p>{event.description}</p>
                 </div>
             )
         })
