@@ -8,71 +8,111 @@ input::-ms-clear{display:none}input[type=number]{-moz-appearance:textfield}
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{appearance:none}
 svg{display:inline-flex}img{max-width:100%;display:block}
 
+
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
 html {
   color: #030303;
   font: caption;
 }
 
-body {
-
-}
-
 a {
-  color: #268428;
+  color: #8FBFE0;
   text-decoration: underline;
 }
 
 h1 {
-   color: #3c763d;
+   color: #256D1B;
    font-size: 500%;
    margin: auto;
 }
 
 h2{
-  color: #3c763d;
+  color: #256D1B;
   font-size: 200%;
-  border: solid;
   margin: auto;
 }
 
-
-#bannerimage {
-  width: 100px;
-  height: 50px;
-  background-color: #3c763d;
-  background-position: center;
+h3{
+  font-size: 150%;
+  margin: auto;
 }
 
- 
 .flex-container {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  background-color: #244F26;
 }
-.staff-preview-container {
+
+.event-preview{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.events-carousel{
+  margin: auto;
+  width: 500px;
+}
+
+#officer-container {
   display: flex;
   flex-flow: row wrap;
-  width: 900px;
+  margin: auto;
+  justify-content: center;
+  align-content: space-around;
+  width: 70%;
+}
+
+#staff-preview-container {
+  width: 70%;
   height: 300px;
   margin: auto;
-  justify-content: space-around;
-  align-content: space-between;
+}
+
+.staff-preview{
+  padding:10px;
 }
 
 p {
   width: 500px;
   margin: auto;
 }
+.events-carousel{
+  width: 900px;
+  margin: 0 auto;
+}
 
 .Header{
+  display:flex;
   border-bottom: 4px solid #3c763d;
-  margin: 0  auto;
-  padding: 40px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+#logo {
+  width: 100px;
+  height: 50px;
+}
+
+.header-carousel{
+  margin: 0 auto;
+  padding: 30px;
+  height: 310px;
+  width: 800px;
+  padding: 2px;
+  border: 4px solid #268428;
 }
 
 .Footer{
   border-top: 4px solid #3c763d;
-  margin: 0 auto;
-  padding: 10px 0px;
+  margin: auto;
+  padding: 20px;
 }
 
 .FooterLinks{
@@ -118,7 +158,7 @@ p {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background:  #268428;
+  background:  #72A98F;
 }
 
 /* Position and sizing of clickable cross button */
@@ -134,8 +174,8 @@ p {
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
+  background: #3D5A6C;
+  padding: 3em 1.5em 0;
   font-size: 1.6em;
 }
 

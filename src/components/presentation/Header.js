@@ -7,29 +7,31 @@ import { Link } from 'react-router';
 
 export default class Header extends React.Component {
   render() {
-    var settings = {
+    const settings = {
+      className: "header-carousel",
       infinite: true,
-      speed: 250,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 60
+      arrows: false
     };
+
+    const images = ['/img/headers/1.jpg', '/img/headers/2.jpg', '/img/headers/3.jpg', '/img/headers/4.jpg', '/img/headers/5.jpg', '/img/headers/7.jpg', '/img/headers/8.jpg']
+    const taggedImages = images.map(image => {
+      return (<div><img className="header-image" src={image} height="300" width="2000"/></div>);
+    })
     return (
       <div className='Header'>
 
-        <div id="bannerimage">
+        <div id="logo">
           <Link className to={`/`} activeClassName="active">
             <img src='/img/logo-grs.png' />
           </Link>
         </div>
-
         <Slider {...settings}>
-          <div><img src='/img/headers/1.jpg' /></div>
-          <div><img src='/img/headers/2.jpg' /></div>
-          <div><img src='/img/headers/3.jpg' /></div>
-          <div><img src='/img/headers/4.jpg' /></div>
+          {taggedImages}
         </Slider>
+
       </div>
     );
   }

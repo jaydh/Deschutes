@@ -1,9 +1,9 @@
 {
-  "name": "judo-heroes",
+  "name": "global-reach-seattle",
   "version": "1.0.0",
-  "description": "Simple application to showcase how to achieve universal rendering and routing with React and Express.",
+  "description": "Global Reach Seattle",
   "main": "src/server.js",
-  "repository": "git@github.com:lmammino/judo-heroes.git",
+  "repository": "github.com/jaydh/Deschutes",
   "scripts": {
     "start": "cross-env NODE_ENV=production node_modules/.bin/babel-node src/server.js",
     "build": "cross-env NODE_ENV=production node_modules/.bin/webpack -p"
@@ -24,11 +24,12 @@
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-0": "^6.22.0",
     "babel-runtime": "^6.23.0",
-    "caniuse-db": "next",
     "cross-env": "^3.2.4",
     "ejs": "^2.5.1",
     "eslint": "^3.16.1",
     "express": "^4.14.0",
+    "file-loader": "^0.11.1",
+    "firebase": "^3.7.8",
     "global": "^4.3.1",
     "radium": "^0.18.1",
     "react": "^15.3.1",
@@ -36,7 +37,8 @@
     "react-dom": "^15.3.1",
     "react-router": "^2.6.1",
     "react-slick": "^0.14.7",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "url-loader": "^0.5.8"
   },
   "devDependencies": {
     "eslint": "^3.16.1",

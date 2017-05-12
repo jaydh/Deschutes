@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import StaffPreview from '../presentation/StaffPreview'
+import StaffPreview from './StaffPreview'
 import staff from '../../data/Staff'
 import NotFoundPage from './NotFoundPage'
 import {Link} from 'react-router'
@@ -13,13 +13,14 @@ export default class StaffPage extends React.Component {
         if (!staffMember) {
             return <NotFoundPage />;
         }
+        const imgSrc = '/img/staff/'+ staffMember.image;
         return (
-            <div>
-                <img className="staff-image" src={`img/staff/${staffMember.image}`} />
-                <h1>{staffMember.name}</h1>
+            <div className="flex-container">
+                <img src={imgSrc} height="200" width="200"/>
+                <h3>{staffMember.name}</h3>
                 <section className='staff-introduction'>{staffMember.introduction}</section>
                 <div className="navigateBack">
-                    <Link to="/about/">« Back to About</Link>
+                    <Link to="/about/">« Back to About Us</Link>
                 </div>
             </div>
         )
