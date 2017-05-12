@@ -49,6 +49,7 @@ h3{
 
 .event-preview{
   display: flex;
+  margin: auto;
   flex-flow: column wrap;
   justify-content: center;
   padding: 10px;
