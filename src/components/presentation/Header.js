@@ -18,7 +18,7 @@ export default class Header extends React.Component {
 
     const images = ['/img/headers/1.jpg', '/img/headers/2.jpg', '/img/headers/3.jpg', '/img/headers/4.jpg', '/img/headers/5.jpg', '/img/headers/7.jpg', '/img/headers/8.jpg']
     const taggedImages = images.map(image => {
-      return (<div><img className="header-image" src={image} height="300" width="2000"/></div>);
+      return (<div><img className="header-image" src={image}/></div>);
     })
     return (
       <div className='Header'>
