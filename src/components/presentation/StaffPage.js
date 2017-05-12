@@ -15,8 +15,8 @@ export default class StaffPage extends React.Component {
         }
         const imgSrc = '/img/staff/'+ staffMember.image;
         return (
-            <div>
-                <img className="staff-image" src={imgSrc} />
+            <div className="flex-container">
+                <img src={imgSrc} height="200" width="200"/>
                 <h3>{staffMember.name}</h3>
                 <section className='staff-introduction'>{staffMember.introduction}</section>
                 <div className="navigateBack">

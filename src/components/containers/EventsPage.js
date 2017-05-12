@@ -8,7 +8,8 @@ export default class EvengsPage extends React.Component {
     render() {
         const settings = {
             className: "events-carousel",
-            arrows: true
+            arrows: true,
+            dots: true
         };
 
         const events = [
@@ -32,12 +33,11 @@ export default class EvengsPage extends React.Component {
 
         const eventPreview = events.map(event => {
             return (
-                <div>
+                <div className="event-preview">
                     <a href={event.link} >
-                        <img className="eventImage" src={event.src} />
+                        <h2>{event.name}</h2>
                     </a>
-                    <h2>{event.name}</h2>
-                    <h3>{event.date}</h3>
+                    <img src={event.src} />
                     <p>{event.description}</p>
                 </div>
             )
