@@ -4,7 +4,6 @@ import React from 'react'
 import { Route, IndexRoute } from 'react-router'
 import Layout from './components/Layout';
 import HomePage from './components/containers/HomePage'
-import LifeTipsPage from './components/containers/LifeTipsPage'
 import EventsPage from './components/containers/EventsPage'
 import AboutPage from './components/containers/AboutPage'
 import ConnectUPage from './components/containers/ConnectUPage'
@@ -15,7 +14,6 @@ import BlogsPage from './components/containers/BlogsPage'
 const routes = (
   <Route path="/" component={Layout}>
     <IndexRoute component={HomePage}/>
-    <Route path="lifetips" component={LifeTipsPage}/>
     <Route path="events" component={EventsPage}/>
     <Route path="about" component={AboutPage}/>
     <Route path="connectu" component={ConnectUPage}/>
