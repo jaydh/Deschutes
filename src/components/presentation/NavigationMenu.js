@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import {bubble as Menu} from 'react-burger-menu'
+import {scaleRotate as Menu} from 'react-burger-menu'
 import { Link } from 'react-router';
 import Radium from 'radium'
 
@@ -41,7 +41,7 @@ export default class NavigationMenu extends React.Component {
       pageWrapId={ "page-wrap" } 
       outerContainerId={ "outer-container" }
       radiumConfig={{ userAgent: 'all' }}
-      width={ 200 } >
+      width={ 250 } >
         {this.state.pages.map(menuItem => {
           return <RadiumLink className="menu-item" to={`/${menuItem.id}`} activeClassName="active">
             {menuItem.name}

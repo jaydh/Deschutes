@@ -11,14 +11,15 @@ export default class Layout extends React.Component {
     return (
       <div className="app-container">
         <div id="outer-container">
-          <NavigationMenu />
-          <Header />
-          
-          <main id="page-wrap">
-            <div className="app-content">{this.props.children}</div>
-          </main>
 
-          <Footer />
+          <NavigationMenu />
+          <main id="page-wrap">
+
+            <Header />
+            <div className="app-content">{this.props.children}</div>
+            <Footer />
+
+          </main>
         </div>
       </div>
     )
