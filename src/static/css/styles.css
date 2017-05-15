@@ -20,7 +20,7 @@ html {
 }
 
 a {
-  color: #8FBFE0;
+  color: #358600;
   text-decoration: underline;
 }
 
@@ -44,7 +44,7 @@ h3{
 .flex-container {
   display: flex;
   flex-flow: column nowrap;
-  background-color: #244F26;
+  background: radial-gradient( #C6C7C4,  #48A53B); 
 }
 
 .event-preview{
@@ -95,6 +95,7 @@ p {
 
 .Header{
   display:flex;
+  background-color: #EEF0F2;
   border-bottom: 4px solid #3c763d;
   height: 350px;
   margin: 0 auto;
@@ -122,6 +123,7 @@ p {
 }
 
 .Footer{
+  background-color: #EEF0F2;
   border-top: 4px solid #3c763d;
   margin: auto;
   padding: 20px;
@@ -170,7 +172,7 @@ p {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background:  #72A98F;
+  background:  #358600;
 }
 
 /* Position and sizing of clickable cross button */
@@ -186,14 +188,14 @@ p {
 
 /* General sidebar styles */
 .bm-menu {
-  background: #3D5A6C;
+  background: #FFFFFF;
   padding: 3em 1.5em 0;
   font-size: 1.6em;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: #EEF0F2;
 }
 
 /* Wrapper for item list */
