@@ -11,10 +11,8 @@ export default class AboutPage extends React.Component {
 
         const settings = {
             infinite: true,
-            dots: true,
-            draggable: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToShow: 4,
+            slidesToScroll: 2,
             autoplay: true,
             arrows: true
         }
