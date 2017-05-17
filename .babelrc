@@ -1,4 +1,4 @@
 {
-  "presets": ["es2015-loose", "stage-0", "react", "env"],
+  "presets": ["es2015-loose", "stage-0", "react", "env","flow"],
   "plugins": ["react-hot-loader/babel"]
 }
