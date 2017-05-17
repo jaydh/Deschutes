@@ -7,7 +7,6 @@ export default class EvengsPage extends React.Component {
 
     render() {
         const settings = {
-            className: "events-carousel",
             arrows: true,
             dots: true
         };
@@ -33,17 +32,21 @@ export default class EvengsPage extends React.Component {
 
         const eventPreview = events.map(event => {
             return (
+
                 <div className="event-preview">
                     <a href={event.link} >
-                        <h2>{event.name}</h2>
+                        <h2>{event.name} : {event.date}</h2>
                     </a>
-                    <img src={event.src} />
+                    <img className="event-image" src={event.src} />
                     <p>{event.description}</p>
                 </div>
             )
         })
 
         return (
+
+            /*if event has passed throw in passed event folder*/
+
             <div className="flex-container">
                 <h1>EVENTS</h1>
 

@@ -18,13 +18,13 @@ export default class StaffPage extends React.Component {
             <div className="flex-container">
                 <img src={imgSrc} height="200" width="200" />
                 <h3>{staffMember.name}</h3>
-               
+
                 <section className='staff-introduction'>{
                     staffMember.introduction.map(paragraph => {
                         return <p>{paragraph}</p>
                     })
                 }</section>
-               
+
                 <div className="navigateBack">
                     <Link to="/about/">« Back to About Us</Link>
                 </div>
