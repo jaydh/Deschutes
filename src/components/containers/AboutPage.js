@@ -28,6 +28,9 @@ export default class AboutPage extends React.Component {
         const nonofficersPreview = staff.filter((staffMember) => {
             return !staffMember.officer
         }).map(staffData => {
+            if(!staffData.image){
+                return 0
+            }
             return (
                 <div>
                     <StaffPreview key={staffData.id} {...staffData} />
