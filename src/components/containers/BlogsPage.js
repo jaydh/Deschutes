@@ -1,36 +1,31 @@
-'use strict';
+"use strict";
 
-import React from 'react';
-import blogs from '../../data/Blogs.js'
-import Slider from 'react-slick'
+import React from "react";
+import blogs from "../../data/Blogs.js";
+import { Link } from "react-router";
 
 export default class BlogsPage extends React.Component {
-    render() {
-        var settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 30
-        };
-
-        return (
-            <div className="flex-container">
-                <Slider {...settings}>
-                    {blogs.map(blogItem => {
-                        return (
-                            <div>
-                                <img src={blogItem.photos} height="400" />
-                                <h2>{blogItem.title}</h2>
-                                <h3>by {blogItem.author}     {blogItem.date.toLocaleDateString()}</h3>
-                                <p>{blogItem.text}</p>
-                            </div>
-                        )
-                    })}
-                </Slider>
+  render() {
+    return (
+      <div className="flex-container">
+        {blogs.map(blogItem => {
+          return (
+            <div>
+              <Link
+                className
+                to={`/blogs/${blogItem.authorID}/${blogItem.titleID}`}
+                activeClassName="active"
+              >
+                <h2>{blogItem.title}</h2>
+                <h3>
+                  by {blogItem.author} {blogItem.date.toLocaleDateString()}
+                </h3>
+              </Link>
             </div>
-        );
-    }
+          );
+        })}
+
+      </div>
+    );
+  }
 }
