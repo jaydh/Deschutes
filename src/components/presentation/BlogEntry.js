@@ -19,8 +19,13 @@ export default class BlogEntry extends React.Component {
     }
     return (
       <div className="flex-container">
-        <h1>{blogEntry.title}</h1>
-        <h2>By {blogEntry.authorID}</h2>
+        <h2>{blogEntry.title}</h2>
+        <h3>By {blogEntry.authorID}</h3>
+        <div className="blog-body">
+          {blogEntry.paragraphs.map(paragraph => {
+            return <p>{paragraph}</p>
+          })}
+        </div>
       </div>
     );
   }
