@@ -19,7 +19,7 @@ const routes = (
     <Route path="about" component={AboutPage} />
     <Route path="connectu" component={ConnectUPage} />
     <Route path="about/:id" component={StaffPage} />
-    <Route path="blogs/:author/:id" component={BlogEntry} />
+    <Route path="blogs/:authorID/:titleID" component={BlogEntry} />
     <Route path="blogs" component={BlogsPage} />
     <Route path="*" component={NotFoundPage} />
   </Route>
