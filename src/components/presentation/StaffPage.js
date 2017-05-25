@@ -25,6 +25,9 @@ export default class StaffPage extends React.Component {
                     })
                 }</section>
 
+                //filter blogs by author
+                
+
                 <div className="navigateBack">
                     <Link to="/about/">« Back to About Us</Link>
                 </div>
