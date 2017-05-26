@@ -5,6 +5,8 @@ import StaffPreview from './StaffPreview'
 import staff from '../../data/Staff'
 import NotFoundPage from './NotFoundPage'
 import { Link } from 'react-router'
+import Slider from 'react-slick'
+import blogs from '../../data/Blogs'
 
 export default class StaffPage extends React.Component {
     render() {
@@ -14,6 +16,20 @@ export default class StaffPage extends React.Component {
             return <NotFoundPage />;
         }
         const imgSrc = '/img/staff/' + staffMember.image;
+
+        const blogEntries = blogs.filter(
+            (blog) => (blog.authorID === staffMember.id)
+        );
+
+        const settings = {
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            autoplay: true,
+            arrows: true
+        }
+
+
         return (
             <div className="flex-container">
                 <img src={imgSrc} height="200" width="200" />
@@ -25,9 +41,15 @@ export default class StaffPage extends React.Component {
                     })
                 }</section>
 
-                //filter blogs by author
-                
-
+                <Slider {...settings}>
+                    {blogEntries.map(blog => {
+                        return (
+                            <div>
+                                {blog.title}
+                            </div>
+                        )
+                    })}
+                </Slider>
                 <div className="navigateBack">
                     <Link to="/about/">« Back to About Us</Link>
                 </div>

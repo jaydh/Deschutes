@@ -9,7 +9,6 @@ export default class BlogEntry extends React.Component {
   render() {
     const authorID = this.props.params.authorID;
     const titleID = this.props.params.titleID;
-    console.log(authorID, titleID, "d");
     const blogEntry = blogs.filter(
       (blog) => (blog.authorID === authorID && blog.titleID === titleID)
     )[0];
